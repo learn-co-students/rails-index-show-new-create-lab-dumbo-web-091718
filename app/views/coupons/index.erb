@@ -1,0 +1,10 @@
+<h1> New Vybe <h1>
+
+<% @coupons.each do | t | %>
+  <%= "Store:" + t.store %>
+    <br>
+  <%= "Coupon Code:" + t.coupon_code %>
+    <br>
+  <%= link_to "FREESTUFF", coupon_path(t) %>
+  <br>
+  <% end %>
