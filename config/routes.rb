@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  get '/', to: 'coupons#index' #create a default index route to coupons
   resources :coupons, only: [:index, :new, :create, :show]
 
 

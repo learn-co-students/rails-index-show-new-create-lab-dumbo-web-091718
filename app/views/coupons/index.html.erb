@@ -2,8 +2,7 @@
 <h1> Coupon Page</h1>
 
 <% @coupons.each do |coupon| %>
-  <h1><%= coupon.coupon_code %></h1>
-  <h1><%= coupon.store %></h1>
-  <%= link_to coupon.coupon_code, coupon %>
+  <h1><%=  link_to coupon.coupon_code, coupon_path(coupon) %> | <%= coupon.store %> </h1>
+  <!-- <%= link_to coupon.coupon_code, coupon %> -->
 
 <% end %>
