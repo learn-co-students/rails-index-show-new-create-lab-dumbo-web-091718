@@ -1,0 +1,8 @@
+<!-- cd rails-index-show-new-create-lab-dumbo-web-091718/app/views/ && touch new.erb && touch index.erb && touch show.erb -->
+<h1> Coupon Page</h1>
+
+<% @coupons.each do |coupon| %>
+  <h1><%=  link_to coupon.coupon_code, coupon_path(coupon) %> | <%= coupon.store %> </h1>
+  <!-- <%= link_to coupon.coupon_code, coupon %> -->
+
+<% end %>
