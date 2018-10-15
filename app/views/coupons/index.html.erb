@@ -1,0 +1,8 @@
+<h1>All yer Damn Coups</h1>
+<% @coupons.each do |coups| %>
+  <% code = coups.coupon_code %>
+  <% store = coups.store %>
+  <%= link_to "#{code} at #{store}", coups %>
+<% end %>
+<br>
+<%= link_to "Add A New Coupon", action: "new" %>
