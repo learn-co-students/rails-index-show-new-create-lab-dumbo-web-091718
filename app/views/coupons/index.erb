@@ -1,0 +1,11 @@
+
+<h1> Welcome to the Coupon Site! </h1>
+<p>
+  <% @coupons.all.each do |c| %>
+    <%= link_to "#{c.coupon_code} - #{c.store}", c %>
+    <br>
+  <% end %>
+
+<%=  %>
+
+</p>
